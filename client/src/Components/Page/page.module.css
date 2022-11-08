@@ -1,0 +1,62 @@
+.containerPage {
+   background-image: url('../../asset/images/bg4Page.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   position: relative;
+   height: 100vh;
+   width: 100%;
+}
+
+.btnPage {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 6%;
+   height: 50%;
+   position: absolute;
+   top: 10%;
+   left: 8%;
+   background: rgba(245, 222, 179, 0.783);
+   color: #000;
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: bolder;
+   border: none;
+   border-radius: 0 10px 10px 10px;
+   transition: all .5s;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+   cursor: pointer;
+   font-family: cursive;
+   z-index: 1;
+   box-shadow: 20px 20px 16px 0px #604227,
+      4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+
+.btnPage::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background-color: rgba(0, 0, 0, 0.779);
+   z-index: -1;
+   transition: all 0.5s;
+}
+
+.btnPage:hover::before {
+   height: 100%;
+   border-radius: 10px;
+   box-shadow: 4px 20px 16px 0px #211d19,
+      4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+.btnPage:hover {
+   color: wheat;
+}
+
+.btnPage:active:before {
+   background: #b9b9b9;
+}

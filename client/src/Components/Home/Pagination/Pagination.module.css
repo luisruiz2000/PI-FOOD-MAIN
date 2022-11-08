@@ -1,0 +1,31 @@
+.contentPagination {
+   position: fixed;
+   width: 100%;
+   top: 27vh;
+   background-color: #1b1b1b;
+   padding: .1rem .5rem;
+   color: white;
+}
+
+.listPagination {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.contentPage {
+   list-style: none;
+}
+
+.numberPage {
+   cursor: pointer;
+   margin: 0 1rem;
+   padding: .5rem;
+   border-radius: 50%;
+   border: 1px solid rgb(97, 93, 93);
+}
+
+.numberPage:hover {
+   border-color: #008bf8;
+   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,76 @@
+.headerContent {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 7vh;
+   padding: 1rem 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #1b1b1b;
+}
+
+.titleHead {
+   font-size: 2.5rem;
+   font-weight: bold;
+   letter-spacing: .5rem;
+   color: wheat;
+}
+
+.btnCreated {
+   cursor: pointer;
+   padding: 1em 2em;
+   font-size: 17px;
+   font-weight: bold;
+   background: transparent;
+   border: none;
+   position: relative;
+   color: wheat;
+   z-index: 1;
+}
+
+.btnCreated::after,
+.btnCreated::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   z-index: -99999;
+   transition: all .4s;
+}
+
+.btnCreated::before {
+   transform: translate(0%, 0%);
+   width: 100%;
+   height: 100%;
+   background: #ffffff15;
+   border-radius: 50px;
+}
+
+.btnCreated::after {
+   transform: translate(0px, 0px);
+   width: 10px;
+   height: 10px;
+   background: darkslategray;
+   backdrop-filter: blur(5px);
+   border-radius: 50px;
+}
+
+.btnCreated:hover::before {
+   transform: translate(5%, 20%);
+   width: 10px;
+   height: 10px;
+}
+
+.btnCreated:hover::after {
+   border-radius: 50px;
+   transform: translate(0, 0);
+   width: 100%;
+   height: 100%;
+}
+
+.btnCreated:active::after {
+   transition: 0s;
+   transform: translate(0, 5%);
+}

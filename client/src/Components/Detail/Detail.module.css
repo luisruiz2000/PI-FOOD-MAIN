@@ -1,0 +1,17 @@
+.detail {
+   width: 90%;
+   padding: 21vh 2rem 2rem 2rem;
+   margin: auto;
+   background-color: rgba(7, 7, 7, 0.425);
+   color: antiquewhite;
+}
+
+.contentDetail {
+   display: flex;
+}
+
+.imgDetail {
+   margin-right: 1rem;
+   width: 25rem;
+   border-radius: 10px;
+}

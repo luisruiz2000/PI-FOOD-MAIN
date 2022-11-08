@@ -1,0 +1,120 @@
+.createContent {
+   width: 100%;
+   height: 100vh;
+   background-image: url('../../asset/images/bgCreate2.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.formContent {
+   text-align: center;
+   padding-top: 16vh;
+   background-color: rgba(5, 5, 5, 0.808);
+   height: 84vh;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.formCreate {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 50rem;
+   height: 25rem;
+   padding: 30px;
+   background-color: #016DD9;
+   margin: auto;
+}
+
+.inputCreate {
+   width: 100rem;
+   padding: 1rem;
+   border: 3px solid transparent;
+   color: black;
+   background-color: rgba(252, 252, 252, 0.774);
+   font-weight: bold;
+   font-size: 1rem;
+}
+
+.inputCreate:focus {
+   border: 3px solid black;
+   outline: none;
+   box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.textInputError {
+   font-size: .7rem;
+   margin-bottom: 0;
+   color: rgb(204, 0, 0);
+   display: none;
+}
+
+.textInputErrorActive {
+   display: block;
+}
+
+
+.selectCreate {
+   cursor: pointer;
+   padding: .5rem;
+   border: none;
+   font-size: 1rem;
+   font-weight: bold;
+   color: rgba(77, 75, 75, 0.788);
+   background-color: rgba(252, 252, 252, 0.774);
+}
+
+
+.btnCreate {
+   letter-spacing: .5px;
+   cursor: pointer;
+   height: 3em;
+   width: 8em;
+   border: none;
+   border-radius: 10em;
+   background: #016DD9;
+   font-size: 17px;
+   color: #ffffff;
+   font-family: inherit;
+   font-weight: 500;
+}
+
+.btnCreate:hover {
+   animation: shake3856 0.3s linear infinite both;
+}
+
+@keyframes shake3856 {
+   0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+   }
+
+   20% {
+      -webkit-transform: translate(-2px, 2px);
+      transform: translate(-2px, 2px);
+   }
+
+   40% {
+      -webkit-transform: translate(-2px, -2px);
+      transform: translate(-2px, -2px);
+   }
+
+   60% {
+      -webkit-transform: translate(2px, 2px);
+      transform: translate(2px, 2px);
+   }
+
+   80% {
+      -webkit-transform: translate(2px, -2px);
+      transform: translate(2px, -2px);
+   }
+
+   100% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+   }
+}

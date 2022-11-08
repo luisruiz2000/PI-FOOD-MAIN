@@ -1,0 +1,13 @@
+.contentCards {
+   width: 100%;
+   padding-top: 33vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.link {
+   text-decoration: none;
+   color: #fff;
+}

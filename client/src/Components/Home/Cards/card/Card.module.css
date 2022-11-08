@@ -1,0 +1,56 @@
+.cardContent {
+   cursor: pointer;
+   width: 15rem;
+   height: 22rem;
+   display: flex;
+   flex-direction: column;
+   border-radius: 20px;
+   background: #4e4e4e;
+   padding: 0rem 1.8rem 2.1rem 1.8rem;
+   border: 2px solid #989ba4;
+   transition: 0.5s ease-out;
+   overflow: visible;
+   margin: .8rem;
+}
+
+.titleCard {
+   font-weight: bold;
+   font-size: 1rem;
+   line-height: 1rem;
+   margin-bottom: 0;
+}
+
+.textCard {
+   font-size: 1rem;
+   margin-bottom: 0;
+}
+
+
+.imageCard {
+   width: 15rem;
+}
+
+
+.cardButton {
+   width: 50%;
+   border-radius: 1rem;
+   border: none;
+   background-color: #008bf8;
+   color: #fff;
+   font-size: 1rem;
+   padding: .5rem 1rem;
+   left: 0;
+   bottom: 0;
+   opacity: 0;
+   transition: 0.3s ease-out;
+}
+
+
+.cardContent:hover {
+   border-color: #008bf8;
+   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.cardContent:hover .cardButton {
+   opacity: 5;
+}

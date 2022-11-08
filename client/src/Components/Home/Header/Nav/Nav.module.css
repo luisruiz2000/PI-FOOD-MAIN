@@ -1,0 +1,107 @@
+.navContent {
+   position: fixed;
+   top: 10.5vh;
+   left: 0;
+   right: 0;
+   padding: 0 1rem 2rem 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(15px);
+   background-color: #1b1b1b;
+}
+
+
+.resetHome::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 0;
+   border-radius: 15px;
+   background-color: darkslategray;
+   z-index: -1;
+   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+   transition: all 250ms
+}
+
+.resetHome:hover {
+   color: #ccc;
+}
+
+.resetHome:hover::before {
+   width: 90%;
+}
+
+.inputNav {
+   color: wheat;
+   letter-spacing: .9px;
+   font-size: 1.1rem;
+   background-color: transparent;
+   box-sizing: border-box;
+   padding-block: 0.7em;
+   border: none;
+   border-radius: 5px 5px 0 0;
+   border-bottom: var(--border-height) solid var(--border-before-color);
+}
+
+.inputNav:hover {
+   background: var(--input-hovered-color);
+}
+
+.inputNav:focus {
+   outline: none;
+}
+
+.inputNav:focus~.input-border {
+   width: 100%;
+}
+
+.sectionNav {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 3rem;
+}
+
+.formSearch {
+   display: flex;
+   align-items: center;
+}
+
+.inputSeachtByName {
+   min-height: 50px;
+   max-width: 150px;
+   padding: 0 1rem;
+   color: #fff;
+   font-size: 15px;
+   border: 1px solid #5e4dcd;
+   border-radius: 6px 0 0 6px;
+   background-color: transparent;
+}
+
+.btnSearchName {
+   min-height: 50px;
+   padding: .5em 1em;
+   border: none;
+   border-radius: 0 6px 6px 0;
+   background-color: #5e4dcd;
+   color: #fff;
+   font-size: 15px;
+   cursor: pointer;
+   transition: background-color .3s ease-in-out;
+}
+
+.btnSearchName:hover {
+   background-color: #5e5dcd;
+}
+
+.inputSeachtByName:focus,
+.inputSeachtByName:focus-visible {
+   border-color: #3898EC;
+   outline: none;
+}
