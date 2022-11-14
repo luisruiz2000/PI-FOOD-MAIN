@@ -79,7 +79,7 @@
    padding: 0 1rem;
    color: #fff;
    font-size: 15px;
-   border: 1px solid #5e4dcd;
+   border: 1px solid wheat;
    border-radius: 6px 0 0 6px;
    background-color: transparent;
 }
@@ -89,15 +89,16 @@
    padding: .5em 1em;
    border: none;
    border-radius: 0 6px 6px 0;
-   background-color: #5e4dcd;
-   color: #fff;
+   background-color: wheat;
+   color: rgb(72, 67, 67);
+   font-weight: bolder;
    font-size: 15px;
    cursor: pointer;
    transition: background-color .3s ease-in-out;
 }
 
 .btnSearchName:hover {
-   background-color: #5e5dcd;
+   background-color: white;
 }
 
 .inputSeachtByName:focus,

@@ -12,3 +12,11 @@ export const orderArrayByUtil = (arrayToOrder, orderKey) => {
       return arrayToOrder.sort((a, b) => a.healthScore < b.healthScore ? 1 : -1)
    }
 }
+
+export const setItemInArray = (paramArray, paramItem) => {
+   if (paramArray.includes(paramItem)) {
+      return paramArray.filter(item => item !== paramItem)
+   }
+
+   return [...paramArray, paramItem]
+}

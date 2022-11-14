@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom"
 import { getDetailRecipe } from '../../Redux/Actions'
 import Head from '../Home/Header/Head/Head'
 import { detail, contentDetail, imgDetail } from './Detail.module.css'
+import imgDefault from '../../asset/images/imageCard.jpg'
 
 const Detail = () => {
    const { recipeId } = useParams()
@@ -22,7 +23,7 @@ const Detail = () => {
          <Head textBtn='Regresar' route='/home' />
          <div className={detail}>
             <div className={contentDetail}>
-               <img className={imgDetail} src={image} />
+               <img className={imgDetail} src={image ? image : imgDefault} />
                <div>
                   <h3>{title}</h3>
                   <p><b>Dietas: </b>{diets}</p>

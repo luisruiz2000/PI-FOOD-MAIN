@@ -1,4 +1,5 @@
 import React from 'react'
+import imgeDefauld from '../../../../asset/images/imageCard.jpg'
 import { cardContent, textCard, titleCard, imageCard, } from './Card.module.css'
 
 const Card = (props) => {
@@ -7,9 +8,9 @@ const Card = (props) => {
   return (
     <div className={cardContent}>
 
-      <img className={imageCard} src={props.image} />
+      <img className={imageCard} src={props.image ? props.image : imgeDefauld} />
       <div>
-
+        <hr />
         <p className={titleCard}>{props.name}</p>
         <br />
 

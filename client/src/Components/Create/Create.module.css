@@ -23,10 +23,9 @@
    justify-content: space-between;
    align-items: center;
    flex-wrap: wrap;
-   width: 50rem;
+   width: 75rem;
    height: 25rem;
    padding: 30px;
-   background-color: #016DD9;
    margin: auto;
 }
 
@@ -50,7 +49,7 @@
    font-size: .7rem;
    margin-bottom: 0;
    color: rgb(204, 0, 0);
-   display: none;
+   /* display: none; */
 }
 
 .textInputErrorActive {
@@ -59,15 +58,15 @@
 
 
 .selectCreate {
-   cursor: pointer;
-   padding: .5rem;
-   border: none;
-   font-size: 1rem;
-   font-weight: bold;
-   color: rgba(77, 75, 75, 0.788);
-   background-color: rgba(252, 252, 252, 0.774);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
+.checkbox {
+   color: white;
+   margin: 1rem;
+}
 
 .btnCreate {
    letter-spacing: .5px;
